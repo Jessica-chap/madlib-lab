@@ -3,17 +3,18 @@
 <head>
   <title>A Compliment</title>
 </head>
-<form>
-  Do you want to play a game?
-  <input type="radio" name="compliment" value="yes">
-  <label>Of course!</label>
-
-  <input type="radio" name="compliment" value="no">
-  <label>I hate games</label>  
-
-</form>
 
 <body>
-    Hi {{ person }}! I think you're {{ compliment }}!
+    Hi {{ person }}! I think you're {{ compliment }}!<br>
+    <form action="/game">
+      Do you want to play a game?<br>
+      <input type="radio" name="compliment" value="yes">
+      <label>Of course!</label>
+    
+      <input type="radio" name="compliment" value="no">
+      <label>I hate games</label><br> 
+    
+      <input type="submit"> 
+    </form>
 </body>
 </html>
